@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1D1D">
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/history"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Local Language"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/btnHistory" />
+
+    <Button
+        android:id="@+id/buttonPangasinan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Pangasinan"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#A2F4D6"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/textViewTitle" />
+
+    <Button
+        android:id="@+id/buttonIlocano"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ilocano"
+        android:backgroundTint="#A2F4D6"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:layout_below="@id/buttonPangasinan" />
+</RelativeLayout>

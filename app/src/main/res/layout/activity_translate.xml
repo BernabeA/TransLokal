@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#1D1D1D">
+
+    <Button
+        android:id="@+id/btnBack1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/history"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/sourceLanguageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tagalog"
+        android:layout_marginTop="80dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/btnHistory"
+       />
+
+    <EditText
+        android:id="@+id/editTextSource"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:hint="Enter text to translate"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:layout_below="@id/sourceLanguageTextView" />
+
+    <TextView
+        android:id="@+id/targetLanguageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target Language"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/editTextSource"
+       />
+
+    <TextView
+        android:id="@+id/textViewTranslation"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:hint="Translated text will appear here"
+        android:textColor="#CF2F2E2E"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:layout_below="@id/targetLanguageTextView" />
+
+    <Button
+        android:id="@+id/buttonTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A2F4D6"
+        android:text="Translate"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textViewTranslation" />
+
+</RelativeLayout>
